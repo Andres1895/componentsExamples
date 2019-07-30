@@ -1,0 +1,70 @@
+.containerFooter{
+    display: flex;
+    justify-content: center;
+    background-color: #00B0AE;
+    flex-direction: row;
+    align-items: center
+
+}
+
+.nullColumn{
+    flex:1;
+    flex-direction: row;
+    color: aliceblue;
+    font-weight: 600;
+    justify-content: space-around;
+}
+.Privacy{
+    display: flex;
+    flex: 1;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.privacyItems{
+    flex: 1;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.copyrigth{
+    display: flex;
+    flex:1;
+    flex-direction: row;
+}
+
+.socialMedia{
+    flex: 1;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+
+.buttonSocial{
+    flex: 1;
+    background-color: transparent;
+    border: none;
+    height: 150px;
+    cursor:pointer;
+
+
+}
+
+.buttonStyle{
+    background-color: transparent;
+    color: aliceblue;
+    font-weight: 600;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.textStyle{
+    color: aliceblue;
+    font-weight: 600;
+    font-size: 14px;
+
+
+}

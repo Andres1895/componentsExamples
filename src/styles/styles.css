@@ -1,0 +1,23 @@
+.container{
+    display:  flex;
+    justify-content: center;
+    background-color: aliceblue;
+}
+.header{
+    flex: 1;
+    align-content: center;
+    font-family: inherit;
+    font-size: 14px;
+}
+.footer{
+    flex: 1;
+    align-content: centers
+}
+.headersocial{
+    flex:1
+}
+.logoStem{
+    flex: 1;
+    height: 85px;
+    width: 250px;
+}

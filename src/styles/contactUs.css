@@ -1,0 +1,79 @@
+.ContainerContact{
+    display: flex;
+    flex-direction: row;
+    background-color: #A2A3A7;
+
+}
+
+.sections{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.sectionsItems{
+    flex:1;
+    font-size: 14px;
+    font-weight: 200;
+    justify-content: space-around;
+
+}
+
+.contact{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+.contactItems{
+    flex:1;
+    font-size: 14px;
+    font-weight: 200;
+
+}
+.quickContact{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.quickContactItems{
+    flex:1;
+    display: flex;
+    font-size: 14px;
+    font-weight: 200;
+    flex-direction: column
+}
+
+.formStyle{
+    border: none;
+    width: 150px;
+    height: 25px;
+}
+.location{
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    color: aliceblue;
+    font-weight: 500;
+    font-size: 20px;
+    margin-left: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}

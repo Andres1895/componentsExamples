@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    background-color: #02989C;
+    flex-direction: column;
+}
+
+.titleItem{
+    color: #ffffff;
+    font-size: 20vh;
+    font-weight: bold;
+}
+
+.textAreaItem{
+    color: #ffffff;
+    font-size: 10vh;
+    justify-content: center;
+    text-align: justify;
+}
+
+.linkItem{
+    color: #ffffff;
+    font-size: 10vh;
+    justify-content: flex-end;
+}
