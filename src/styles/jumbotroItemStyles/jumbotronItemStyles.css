@@ -6,13 +6,13 @@
 
 .titleItem{
     color: #ffffff;
-    font-size: 20vh;
+    font-size: 5vh;
     font-weight: bold;
 }
 
 .textAreaItem{
     color: #ffffff;
-    font-size: 10vh;
+    font-size: 2vh;
     justify-content: center;
     text-align: justify;
 }

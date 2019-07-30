@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/jumbotroItemStyles/jumbotroItemStyles.css'
+import '../../styles/jumbotroItemStyles/jumbotronItemStyles.css'
 
 class JumbotronItem extends React.Component{
     render(){
@@ -11,10 +11,9 @@ class JumbotronItem extends React.Component{
                 <p className="textAreaItem">
                     {this.props.textArea}
                 </p>
-                <link className="linkItem">
-                    {this.props.linkButton}
-                </link>
-
+                <a href={this.props.link}>
+                    {this.props.linkText}
+                </a>
             </div>
         );
     }

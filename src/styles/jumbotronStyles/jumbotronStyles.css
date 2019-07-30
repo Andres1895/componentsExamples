@@ -1,4 +1,9 @@
 .container{
     display: flex;
+    flex-direction: row;
+    background-image: url(https://via.placeholder.com/1500x550);
+}
+.jumboItem{
     flex-direction: column;
+
 }
