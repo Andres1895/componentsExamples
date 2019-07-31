@@ -8,7 +8,6 @@ export const JumbotronGeneral = styled.div`
 
 export const Title= styled.div`
     font-weigth: bold;
-
 `;
 
 export const Link = styled.a`

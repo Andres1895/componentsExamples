@@ -1,21 +1,20 @@
 import React from 'react';
-import '../../styles/jumbotroItemStyles/jumbotroItemStyles.css'
 
+import {JumbotronItem, Paragraph, Link, Title, } from './jumbotron.styles';
 class JumbotronItem extends React.Component{
     render(){
         return(
-            <div className="container">
-                <h1 className="titleItem">
+            <JumbotroItem>
+                <Title>
                     {this.props.title}
-                </h1>
-                <p className="textAreaItem">
+                </Title>
+                <p>
                     {this.props.textArea}
                 </p>
-                <link className="linkItem">
-                    {this.props.linkButton}
-                </link>
-
-            </div>
+                <a href={this.props.link}>
+                    {this.props.linkText}
+                </a>
+            </JumbotroItem>
         );
     }
 }
