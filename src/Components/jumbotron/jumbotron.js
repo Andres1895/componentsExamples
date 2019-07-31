@@ -1,5 +1,5 @@
 import React from 'react';
-import JumbotronItem from '../jumbotronItem/jumbotronItem'
+import JumbotronItem from './jumbotronItem'
 import '../../styles/jumbotronStyles/jumbotronStyles.css'
 
 class Jumbotron extends React.Component{
