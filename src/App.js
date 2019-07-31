@@ -5,7 +5,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons';
 import Header from './Components/header';
 import Footer from './Components/footer';
 import ContactUs from './Components/contactUs';
-import Jumbotron from './Components/Jumbotron/jumbotron'
+import Jumbotron from './Components/jumbotron/jumbotron'
 
 library.add(fab)
 
