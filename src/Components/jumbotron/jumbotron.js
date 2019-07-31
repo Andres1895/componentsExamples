@@ -13,20 +13,20 @@ class Jumbotron extends React.Component{
                 <JumbotronContainer>
                     <Width80>
                         <JumbotronItem
-                            title={"¿Ques es STEM?"}
+                            title={"¿Que es STEM?"}
                             textArea={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. "}
                             link={"/"}
                             linkText={"Ver más"}
                     />
                     <SecondJumbotronContainer>
                         <JumbotronItem
-                                title={"¿Ques es STEM?"}
+                                title={"¿Que es STEM?"}
                                 textArea={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. "}
                                 link={"/"}
                                 linkText={"Ver más"}
                         />
                         <JumbotronItem
-                                title={"¿Ques es STEM?"}
+                                title={"¿Que es STEM?"}
                                 textArea={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. "}
                                 link={"/"}
                                 linkText={"Ver más"}
