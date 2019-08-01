@@ -10,10 +10,17 @@ export const JumbotronGeneral = styled.div`
 export const Title= styled.div`
     font-weight: bold;
     font-size: 40px;
+    padding: 30px;
+`;
+
+export const Title2 = styled.div`
+    font-size: 18px;
+    padding: 30px;
 `;
 export const LinkContainer = styled.div`
     display: flex;
     justify-content: flex-end;
+    margin: 30px;
 `
 
 export const Link = styled.a`
@@ -24,8 +31,9 @@ export const Link = styled.a`
 export const Paragraph = styled.p`
     color: white;
     text-align: justify;
-    margin 10px;
-    margin-bottom: 50px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 40px;
 `;
 
 export const JumboItem = styled.div`
@@ -40,6 +48,7 @@ export const Width80 = styled.div`
 `;
 export const Width20 = styled.div`
     width: 30%;
+    margin-right: 40px;
 `;
 export const Width50 = styled.div`
     width:50%;

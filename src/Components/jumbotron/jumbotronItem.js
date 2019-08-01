@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {JumboItem, Paragraph, Link, Title, LinkContainer} from './jumbotron.styles';
+import {JumboItem, Paragraph, Link, Title, LinkContainer, Title2} from './jumbotron.styles';
 class JumbotronItem extends React.Component{
     render(){
         return(
@@ -8,6 +8,9 @@ class JumbotronItem extends React.Component{
                 <Title>
                     {this.props.title}
                 </Title>
+                <Title2>
+                    {this.props.title2}
+                </Title2>
                 <Paragraph>
                     {this.props.textArea}
                 </Paragraph>
