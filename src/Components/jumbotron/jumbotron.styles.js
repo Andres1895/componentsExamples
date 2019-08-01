@@ -7,21 +7,22 @@ export const JumbotronGeneral = styled.div`
     background-image: url(https://via.placeholder.com/1500x350);
 `;
 
-export const Title= styled.div`
-    font-weight: bold;
-    font-size: ${props => console.log('styles', props) || props.smallTitle ? "20px" : "40px"};
-    padding: 30px;
+export const Title= styled.h1`
+    font-family: Tahoma;
+    font-size: ${props => props.smallTitle ? "20px" : "40px"};
+    padding: 20px;
 `;
 
 export const LinkContainer = styled.div`
     display: flex;
     justify-content: flex-end;
-    margin: 30px;
+    margin-right: 30px;
+    padding-bottom: 15px;
 `
 
 export const Link = styled.a`
     color: white;
-    margin-bottom: 20px;
+
 `;
 
 export const Paragraph = styled.p`
@@ -45,6 +46,8 @@ export const Width80 = styled.div`
 export const Width20 = styled.div`
     width: 30%;
     margin-right: 40px;
+    align-items: center;
+    justify-content: center;
 `;
 export const Width50 = styled.div`
     width:50%;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {JumboItem, Paragraph, Link, Title, LinkContainer, Title2} from './jumbotron.styles';
+import {JumboItem, Paragraph, Link, Title, LinkContainer} from './jumbotron.styles';
 class JumbotronItem extends React.Component{
     render(){
         const { smallTitle } = this.props;

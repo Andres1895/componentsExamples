@@ -5,9 +5,6 @@ import {SecondJumbotronContainer, JumbotronGeneral, Width80, Width20, JumbotronC
 
 class Jumbotron extends React.Component{
     render(){
-        const t1= "¿Que es STEM"
-        const p1= "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim."
-        const l1= "Ver mas"
         return(
             <JumbotronGeneral>
                 <JumbotronContainer>
