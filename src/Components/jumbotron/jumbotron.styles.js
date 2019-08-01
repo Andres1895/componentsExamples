@@ -9,14 +9,10 @@ export const JumbotronGeneral = styled.div`
 
 export const Title= styled.div`
     font-weight: bold;
-    font-size: 40px;
+    font-size: ${props => console.log('styles', props) || props.smallTitle ? "20px" : "40px"};
     padding: 30px;
 `;
 
-export const Title2 = styled.div`
-    font-size: 18px;
-    padding: 30px;
-`;
 export const LinkContainer = styled.div`
     display: flex;
     justify-content: flex-end;

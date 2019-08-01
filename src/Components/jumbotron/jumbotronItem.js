@@ -3,14 +3,15 @@ import React from 'react';
 import {JumboItem, Paragraph, Link, Title, LinkContainer, Title2} from './jumbotron.styles';
 class JumbotronItem extends React.Component{
     render(){
+        const { smallTitle } = this.props;
+
+        console.log(smallTitle)
+
         return(
             <JumboItem>
-                <Title>
+                <Title smallTitle={smallTitle}>
                     {this.props.title}
                 </Title>
-                <Title2>
-                    {this.props.title2}
-                </Title2>
                 <Paragraph>
                     {this.props.textArea}
                 </Paragraph>
