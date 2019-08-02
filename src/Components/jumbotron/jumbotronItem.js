@@ -3,12 +3,12 @@ import React from 'react';
 import {JumboItem, Paragraph, Link, Title, LinkContainer} from './jumbotron.styles';
 class JumbotronItem extends React.Component{
     render(){
-        const { smallTitle } = this.props;
+        const { smallTitle, margin } = this.props;
 
         console.log(smallTitle)
 
         return(
-            <JumboItem>
+            <JumboItem margin={margin}>
                 <Title smallTitle={smallTitle}>
                     {this.props.title}
                 </Title>
@@ -20,8 +20,6 @@ class JumbotronItem extends React.Component{
                         {this.props.linkText}
                     </Link>
                 </LinkContainer>
-
-
             </JumboItem>
         );
     }

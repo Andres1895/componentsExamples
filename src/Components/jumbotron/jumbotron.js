@@ -15,13 +15,14 @@ class Jumbotron extends React.Component{
                             link={"/"}
                             linkText={"Ver más"}
                             smallTitle={false}
-                    />
+                        />
                     <SecondJumbotronContainer>
                         <JumbotronItem
                                 title={"Lorem ipsum dolor sit amet"}
                                 textArea={"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. "}
                                 link={"/"}
                                 linkText={"Ver más"}
+                                margin={true}
                                 smallTitle={true}
                         />
                         <JumbotronItem
