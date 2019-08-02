@@ -4,9 +4,6 @@ import {JumboItem, Paragraph, Link, Title, LinkContainer} from './jumbotron.styl
 class JumbotronItem extends React.Component{
     render(){
         const { smallTitle, margin } = this.props;
-
-        console.log(smallTitle)
-
         return(
             <JumboItem margin={margin}>
                 <Title smallTitle={smallTitle}>

@@ -34,11 +34,13 @@ export const JumboItem = styled.div`
     background-color: rgba(0, 148, 152, 0.7);
     flex-direction: row;
     margin-right: ${props => props.margin ? "2rem" : "0"};
+    height: 100%
 `;
 
 export const Width80 = styled.div`
     width: 70%;
     padding: 2rem;
+    height: fit-content;
 `;
 export const Width20 = styled.div`
     width: 30%;
@@ -50,7 +52,6 @@ export const JumbotronContainer = styled.div`
   color: white;
 `;
 export const SecondJumbotronContainer = styled.div`
-  
   display: flex;
   margin-top: .75rem;
   color: white;
