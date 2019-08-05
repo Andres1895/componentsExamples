@@ -2,7 +2,6 @@ import React from 'react';
 import JumbotronItem from './jumbotronItem'
 import {SecondJumbotronContainer, JumbotronGeneral, Width80, Width20, JumbotronContainer} from './jumbotron.styles';
 
-
 class Jumbotron extends React.Component{
     render(){
         return(

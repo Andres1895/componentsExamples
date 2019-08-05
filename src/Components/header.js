@@ -3,7 +3,7 @@ import '../styles/styles.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import Logo from '../Images/logo.png'
 library.add(fab)
 
@@ -11,8 +11,8 @@ class Header extends React.Component{
     render(){
         return(
             <div class='container'>
-                <div >
-                    <img  class='logoStem' src={Logo} />
+                <div>
+                    <img alt='' class='logoStem' src={Logo} />
                 </div>
                 <div class="header">
                     Stem

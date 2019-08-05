@@ -9,17 +9,17 @@ class ButtonComponent extends React.Component{
      {this.props.title}
     </Title>
     <Paragraph>
-     {this.props.textarea}
+     {this.props.textArea}
     </Paragraph>
     <ButtonContainer>
      <Button>
-      {this.props.buttonText}
+      {this.props.buttonText1}
      </Button>
      <Button>
-      {this.props.buttonText}
+      {this.props.buttonText2}
      </Button>
      <Button>
-      {this.props.buttonText}
+      {this.props.buttonText3}
      </Button>
     </ButtonContainer>
    </ContainerGeneral>
