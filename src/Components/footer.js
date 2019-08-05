@@ -3,8 +3,7 @@ import '../styles/footer.css';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {library} from '@fortawesome/fontawesome-svg-core';
 import { fab } from '@fortawesome/free-brands-svg-icons'
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Logo from '../Images/logo.png'
+
 library.add(fab)
 
 class Footer extends React.Component{

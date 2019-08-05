@@ -6,6 +6,7 @@ import Header from './Components/header';
 import Footer from './Components/footer';
 import ContactUs from './Components/contactUs';
 import Jumbotron from './Components/jumbotron/jumbotron'
+import WsiComponente from './Components/WhatStemIs/wsiComponent'
 
 library.add(fab)
 
@@ -14,6 +15,7 @@ function App() {
     <div>
         <Header/>
         <Jumbotron/>
+        <WsiComponente/>
         <ContactUs/>
         <Footer />
 
