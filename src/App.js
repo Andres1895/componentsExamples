@@ -7,6 +7,7 @@ import Footer from './Components/footer';
 import ContactUs from './Components/contactUs';
 import Jumbotron from './Components/jumbotron/jumbotron'
 import WsiComponente from './Components/WhatStemIs/wsiComponent'
+import StemBody from './Components/WhatStemIs/components/StemBodySelection'
 
 library.add(fab)
 
@@ -16,6 +17,7 @@ function App() {
         <Header/>
         <Jumbotron/>
         <WsiComponente/>
+        <StemBody/>
         <ContactUs/>
         <Footer />
 

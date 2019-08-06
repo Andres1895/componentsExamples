@@ -25,7 +25,7 @@ padding: 0.7rem
 padding-left: 5rem
 padding-right: 5rem
 &:hover {
-  filter: brightness(1.1);
+  filter: brightness(1.15);
 }
 `
 export const Paragraph = styled.p`
