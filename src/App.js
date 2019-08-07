@@ -8,6 +8,7 @@ import ContactUs from './Components/contactUs';
 import Jumbotron from './Components/jumbotron/jumbotron'
 import WsiComponente from './Components/WhatStemIs/wsiComponent'
 import StemBody from './Components/WhatStemIs/components/StemBodySelection'
+import VocationalTest from './Components/test/VocationalTest'
 
 library.add(fab)
 
@@ -17,6 +18,7 @@ function App() {
         <Header/>
         <Jumbotron/>
         <WsiComponente/>
+        <VocationalTest/>
         <StemBody/>
         <ContactUs/>
         <Footer />
