@@ -1,66 +1,73 @@
 import React from 'react';
-import {Title, GeneralContainer, ContainerSection, ContainerItem, Paragraph,ContainerSecundary2, ContainerBody} from './StemBodySelection.styles';
+import {ButtonContainer, Button, ContainerLeftAux, Image, ParagraphNested, Par, FirstSection, GeneralContainer, Title, ContainerSections, ContainerLeft, ContainerRigth, ParagraphLarge, ParagraphHalf} from './StemBodySelection.styles';
 import { firstSection } from './textContent';
 import "./styles.css";
+import stem1 from '../../../Images/stem1.jpg'
+import YouTube from 'react-youtube';
 
 class StemBodyItem extends React.Component{
  render(){
  
   return(
-    <div className="generalContainer">
-      <div className="firstSection">
-        <h1>Title</h1>
-        <div className="containerSections">
-          <div className="containerLeft">
-            <div className="paragraph half">{firstSection.parragraph1}
-            <div>
-              IMAGE
-            </div>
-            </div>
-            <div className="paragraph half">{firstSection.parragraph2}</div>
-          </div>
-          <div className="containerRight">
-            <div className="paragraph half">
-              <p className="par">{firstSection.parragraph3}</p>
+    <GeneralContainer>
+      <FirstSection>
+        <Title>{firstSection.title1}</Title>
+        <ContainerSections>
+          <ContainerLeft>
+            <ParagraphHalf>{firstSection.parragraph1}
+            <Image src={stem1}/>
+            <ParagraphNested>{firstSection.parragraph1}</ParagraphNested>
+            </ParagraphHalf>
+            <ParagraphHalf>{firstSection.parragraph2}</ParagraphHalf>
+          </ContainerLeft>
+          <ContainerRigth>
+            <ParagraphHalf>
+              <Par>{firstSection.parragraph3}</Par>
               <div>
                 NEW COMPONENT
               </div>
-            </div>
-          </div>
-        </div>  
-      </div>
+            </ParagraphHalf>
+          </ContainerRigth>
+        </ContainerSections>  
+      </FirstSection>
 
 
-      <div className="firstSection">
-        <h1>Title</h1>
-        <div className="containerSections">
-          <div styles={{width:"100%"}}>
-            <div className="paragraph large">{firstSection.parragraph1}</div>
-          </div>
-          <div className="paragraph half">
-            <p className="par">{firstSection.parragraph3}</p>
-            <div>
-              NEW COMPONENT
-            </div>
-          </div>
-        </div>  
-      </div>
+      <FirstSection>
+        <Title>{firstSection.title1}</Title>
+        <ContainerSections>
+          <ContainerLeftAux>
+            <YouTube
+            videoId="AMaQvev2BNI"
+            />
+          </ContainerLeftAux>
+          <ContainerRigth>
+            <Image src={stem1}/>
+            <ParagraphHalf>
+              <Par>{firstSection.parragraph3}</Par>
+            </ParagraphHalf>
+          </ContainerRigth>
+        </ContainerSections>  
+      </FirstSection>
 
 
-
-      <div className="firstSection">
-        <h1>Title</h1>
-        <div className="containerSections">
-          <div className="paragraph large">{firstSection.parragraph1}</div>
-          <div className="paragraph half">
-            <p className="par">{firstSection.parragraph3}</p>
-            <div>
-              NEW COMPONENT
-            </div>
-          </div>
-        </div>  
-      </div>
-    </div>
+      <FirstSection>
+        <Title>{firstSection.title1}</Title>
+        <ContainerSections>
+          <ContainerLeftAux>
+            <Par>{firstSection.parragraph3}</Par>
+            <Image src={stem1}/>
+          </ContainerLeftAux>
+          <ContainerRigth>
+            <ParagraphHalf>
+              <Par>{firstSection.parragraph3}</Par>
+            </ParagraphHalf>
+            <ButtonContainer>
+              <Button>Consectetuer adipiscing</Button>
+            </ButtonContainer>
+          </ContainerRigth>
+        </ContainerSections>  
+      </FirstSection>
+    </GeneralContainer>
   );
  }
 }
