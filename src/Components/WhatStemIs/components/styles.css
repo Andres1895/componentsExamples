@@ -1,34 +1,44 @@
-.generalContainer {
+.generalContainer { /*DIV*/
   width: 100%;
   padding: 4rem;
-  background-color: red;
+  background-color: white;
 }
 
-.containerSections {
-  padding: 3rem;
-  background-color: blue;
+.containerSections {/*DIV*/
+  padding: 2rem;
   display: flex;
   flex-direction: row;    
   justify-content: space-between;
 }
 
-.containerLeft {
+.containerLeft {/*DIV*/
   display: flex;
   flex-direction: row;
   width: 66%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.paragraph {
+.containerRight {/*DIV*/
+  display: flex;
+  flex-direction: row;
+  width: 33%;
+}
+
+.paragraph {  /*DIV*/
   padding: 2rem;
-  background: green;
+  text-align: justify;
+
 }
 
-.paragraph.large {
-  width: 60%;
+.paragraph.large { /*DIV*/
+  text-align: center;
 }
 
-.paragraph.half {
-  width: 50%;
-  margin-right: 1rem;
+.paragraph.half { /*DIV*/
+  padding: 2rem;
+  margin: 0rem;
+}
+
+.par{
+  margin:0
 }
