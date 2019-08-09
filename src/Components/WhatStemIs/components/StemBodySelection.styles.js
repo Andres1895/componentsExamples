@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-//width:100%
+
 export const GeneralContainer = styled.div` 
-padding: 4rem
+padding: 2rem
 background-color: white
 `
 export const FirstSection = styled.div`
@@ -33,12 +33,16 @@ font-size: 20px
 padding:2rem
 margin: 0
 color: #02ADAD
+padding-left: 0
 `
 export const Paragraph =  styled.p`
 padding: 2rem
 text-align: justify
 margin:0
 min-width: 40%;
+`
+export const ParagraphContainer = styled.div`
+
 `
 
 export const ParagraphLarge = styled(Paragraph)`
@@ -70,7 +74,7 @@ background: transparent
 border-radius: 17px
 border: 2px solid #02ADAD
 font-weigth: bold
-min-width: 10rem
+min-width: 16rem
 color: #02ADAD
 padding: 0.7rem
 font-size: 15px

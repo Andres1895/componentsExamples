@@ -1,9 +1,10 @@
 import React from 'react';
-import {ButtonContainer, Button, ContainerLeftAux, Image, ParagraphNested, Par, FirstSection, GeneralContainer, Title, ContainerSections, ContainerLeft, ContainerRigth, ParagraphLarge, ParagraphHalf} from './StemBodySelection.styles';
+import {ParagraphContainer, ButtonContainer, Button, ContainerLeftAux, Image, ParagraphNested, Par, FirstSection, GeneralContainer, Title, ContainerSections, ContainerLeft, ContainerRigth, ParagraphLarge, ParagraphHalf} from './StemBodySelection.styles';
 import { firstSection } from './textContent';
 import "./styles.css";
 import stem1 from '../../../Images/stem1.jpg'
 import YouTube from 'react-youtube';
+import SquareItem from './SquareItem/SquareItem'
 
 class StemBodyItem extends React.Component{
  render(){
@@ -14,18 +15,19 @@ class StemBodyItem extends React.Component{
         <Title>{firstSection.title1}</Title>
         <ContainerSections>
           <ContainerLeft>
-            <ParagraphHalf>{firstSection.parragraph1}
-            <Image src={stem1}/>
-            <ParagraphNested>{firstSection.parragraph1}</ParagraphNested>
-            </ParagraphHalf>
-            <ParagraphHalf>{firstSection.parragraph2}</ParagraphHalf>
+            <div>
+              <ParagraphHalf>{firstSection.parragraph1}</ParagraphHalf>
+              <div>
+                <Image src={stem1}/>
+              </div>
+              <ParagraphHalf>{firstSection.parragraph2}</ParagraphHalf>
+            </div>
+            <ParagraphHalf>{firstSection.parragraph3}</ParagraphHalf>
           </ContainerLeft>
           <ContainerRigth>
             <ParagraphHalf>
-              <Par>{firstSection.parragraph3}</Par>
-              <div>
-                NEW COMPONENT
-              </div>
+              {firstSection.parragraph4}
+              <SquareItem/>
             </ParagraphHalf>
           </ContainerRigth>
         </ContainerSections>  
@@ -36,14 +38,16 @@ class StemBodyItem extends React.Component{
         <Title>{firstSection.title1}</Title>
         <ContainerSections>
           <ContainerLeftAux>
-            <YouTube
-            videoId="AMaQvev2BNI"
-            />
+            <div>
+             <YouTube videoId="AMaQvev2BNI" />
+            </div>
           </ContainerLeftAux>
           <ContainerRigth>
-            <Image src={stem1}/>
+            <div>
+              <Image src={stem1}/>
+            </div>
             <ParagraphHalf>
-              <Par>{firstSection.parragraph3}</Par>
+              {firstSection.parragraph5}
             </ParagraphHalf>
           </ContainerRigth>
         </ContainerSections>  
@@ -54,12 +58,14 @@ class StemBodyItem extends React.Component{
         <Title>{firstSection.title1}</Title>
         <ContainerSections>
           <ContainerLeftAux>
-            <Par>{firstSection.parragraph3}</Par>
-            <Image src={stem1}/>
+            <Par>{firstSection.parragraph6}</Par>
+            <div>
+              <Image src={stem1}/>
+            </div>
           </ContainerLeftAux>
           <ContainerRigth>
             <ParagraphHalf>
-              <Par>{firstSection.parragraph3}</Par>
+              <Par>{firstSection.parragraph7}</Par>
             </ParagraphHalf>
             <ButtonContainer>
               <Button>Consectetuer adipiscing</Button>

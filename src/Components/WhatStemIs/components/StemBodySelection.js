@@ -2,7 +2,6 @@ import React from 'react';
 import StemBodyItem from './StemBodySelectionItem'
 import {GeneralContainer} from './StemBodySelection.styles';
 
-//import stem1 from '../../../Images/stem1.jpg'
 
 class StemBody extends React.Component{
  render(){
