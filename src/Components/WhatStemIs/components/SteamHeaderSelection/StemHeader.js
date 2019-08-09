@@ -1,6 +1,6 @@
 import React from 'react';
-import ButtonComponent from './buttonComponent'
-import {ContainerGeneral, ItemsContainer} from './buttonComponent.styles'
+import ButtonComponent from '../SteamHeaderSelection/StemHeaderItem'
+import {ContainerGeneral, ItemsContainer} from './StemHeader.styles'
 
 class WsiComponente extends React.Component{
  render(){

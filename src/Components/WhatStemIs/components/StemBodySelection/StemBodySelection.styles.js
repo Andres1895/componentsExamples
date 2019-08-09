@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const GeneralContainer = styled.div` 
-padding: 2rem
+padding-right: 3rem
+padding-left: 3rem
 background-color: white
 `
 export const FirstSection = styled.div`
@@ -18,9 +19,12 @@ flex-direction: row
 width: 66%
 justify-content: space-around
 `
-export const ContainerLeftAux = styled(ContainerLeft)`
+export const ContainerLeftAux = styled.div`
+display: flex
 flex-direction: column
+justify-content: space-between;
 `
+
 export const ContainerRigth = styled.div`
 display: flex
 flex-direction: column
@@ -29,24 +33,29 @@ justify-content: space-between
 `
 
 export const Title = styled.h1`
-font-size: 20px
-padding:2rem
+font-size: 30px
+padding-bottom:2rem
 margin: 0
 color: #02ADAD
 padding-left: 0
 `
 export const Paragraph =  styled.p`
-padding: 2rem
+
+padding-right: 2rem;
 text-align: justify
 margin:0
-min-width: 40%;
+min-width: 40%
+line-height:1.7rem
 `
+
 export const ParagraphContainer = styled.div`
-
+max-width: 50%
 `
-
-export const ParagraphLarge = styled(Paragraph)`
-text-align: center
+export const ParagraphContainerSecond = styled.div`
+max-width: 100%
+`
+export const ParagraphLargeContainer = styled(ParagraphContainer)`
+max-width: 100%
 `
 
 export const ParagraphHalf = styled(Paragraph)`
@@ -54,20 +63,17 @@ text-align: justify
 display: flex
 flex-direction: column
 `
-export const ParagraphNested = styled(Paragraph)`
-padding:0
-`
-
 export const Par = styled(Paragraph)`
 margin:0
 padding: 0
 `
 export const Image = styled.img`
-border-radius: 17px;
+border-radius: 17px
 width: 100%;
-heigth: 100%
-align-items: center;
-justify-content: center;
+heigth: 50%
+align-items: center
+justify-content: center
+max-height: 20rem
 `
 export const Button = styled.button`
 background: transparent
@@ -89,4 +95,20 @@ flex-direction: row
 align-content: center
 justify-content: space-around 
 padding: 2rem
+padding-bottom: 0
+`
+
+export const ImageContainer = styled.div`
+padding-right: 2rem;
+`
+export const LargeImageContainer = styled.div`
+padding: 0rem
+padding-top: 1rem
+`
+
+export const Ex = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 63%;
 `

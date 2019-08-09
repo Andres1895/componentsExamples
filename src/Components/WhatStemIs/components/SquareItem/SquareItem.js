@@ -7,8 +7,8 @@ class SquareItem extends React.Component{
         return(
             <GeneralContainer>
                 <BodyContainer>
-                    <Title>{TextSquare.title}</Title>
-                    <Paragraph>{TextSquare.paragraph}</Paragraph>
+                    <div><Title>{TextSquare.title}</Title></div>
+                    <div><Paragraph>{TextSquare.paragraph}</Paragraph></div>
                     <ButtonContainer>
                         <Button>{TextSquare.textButton}</Button>
                     </ButtonContainer>

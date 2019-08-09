@@ -1,0 +1,268 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: green;
+  margin: 0%;
+  height: 100%;
+  width: 100%;
+}
+
+#fecha{
+  background-color: red;
+}
+
+img {
+      width: 40%;
+      height: 40%;
+}
+
+.contenedor{
+  width: 100%;
+  position: relative;
+  height: 780px;
+}
+
+.botones{
+  font-size: 30px;
+  width: 10%;
+  height: 10%;
+  border-radius: 50%;
+  line-height: 70px;
+  background-color: rgba(0,0,0,7);
+  text-align: center;
+  font-weight: bold;
+  position: absolute;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,.6);
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
+}
+
+.botones:hover{
+  cursor: pointer;
+  transform: scale(1.2,1.2);
+}
+
+.atras{
+  left: 2%;
+  top: 20%;
+}
+
+.adelante{
+  right: 2%;
+  top: 20%;
+}
+
+#izquierdo{
+  background-image:url(izquierda.png);
+  background-repeat:no-repeat;
+  height:auto;
+  width:auto;
+  background-position:center;
+}
+
+#derecho{
+  background-image:url(derecha.png);
+  background-repeat:no-repeat;
+  height:auto;
+  width:auto;
+  background-position:center;
+}
+
+#Name {
+  color: blue;
+  align-content: center;
+  
+}
+
+#root{
+  background-image: image("C:\Users\H367025\my-app\public\ca.jfif")
+}
+
+#cart {
+  color: red;
+  text-align: center;
+}
+
+
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#arriba{
+  width: 100%;
+  margin: 0%;
+  padding: 0%;
+  background-color: white;
+  display: inline-block;
+}
+
+#log{
+  float: left;
+  width: 10%;
+}
+
+#navengando{
+  float: left;
+  width: 50%;
+}
+
+#nave{
+  color: rgb(51, 202, 255  );
+  font-weight: bold;
+  align-items: flex-end;
+  padding: 0%;
+}
+
+ul{
+  list-style-type: none;
+  align-items: flex-end;
+}
+
+li{
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+#redsocial{
+  float: right;
+  width: 20%;
+  padding: 0%;
+  justify-content: flex-end;
+}
+
+#usuario{
+  float: right;
+  width: 10%;
+  justify-content: flex-end;
+}
+
+#logo{
+  width: 100px;
+  height: 50px;
+  padding: 5%;
+}
+
+#sociales{
+  width: 9%;
+  margin-right: 4%;
+}
+
+#logenado{
+  width: 15%;
+  padding: 0%;
+}
+
+
+
+
+
+
+
+
+#abajo{
+  background-color: rgb(51, 202, 255);
+  color: azure;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+}
+
+#arrobaH{
+  float: left;
+  margin-top: 9%;
+  font-size: 50%;
+  padding: .6%;
+}
+
+#netsocial{
+  float: left;
+}
+
+#infopropia{
+  float: left;
+}
+
+#buscador{
+  float: left;
+  margin-left: 10%;
+  margin-top: 3%;
+}
+
+#locacion{
+  float: right;
+}
+
+#logitosrs{
+  width: 15px;
+}
+
+#email{
+  border-radius: 10%;
+  border-right: #fff;
+  border-color: rgb(240, 243, 28);
+}
+
+#enteremail{
+  background-color: rgb(240, 243, 28);
+  color: azure;
+  border-left: #fff;
+  border-radius: 15%;
+}
+
+
+#refpie{
+  color: azure;
+  text-decoration: none;
+}
+
+#refcabeza{
+  color: rgb(51, 202, 255);
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+#totalmarcas{
+  background-color: white;
+  height: 400px;
+  color: rgb(51, 202, 255);
+}
+
+#Infomarcas{
+  float: left;
+  font-weight: bold;
+  margin-right: 3%;
+  margin-left: 2%;
+  margin-top: 13%;
+}
+
+#Logosmarcas{
+  margin-top: 5%;
+}
+
+#imgmarca{
+  width: 98px;
+  height: 60px;
+  padding: 5%;
+}
+
+
+

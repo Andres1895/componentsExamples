@@ -1,34 +1,39 @@
 import React from 'react';
-import {ParagraphContainer, ButtonContainer, Button, ContainerLeftAux, Image, ParagraphNested, Par, FirstSection, GeneralContainer, Title, ContainerSections, ContainerLeft, ContainerRigth, ParagraphLarge, ParagraphHalf} from './StemBodySelection.styles';
+import {Ex, LargeImageContainer,  ImageContainer, ParagraphContainer, ButtonContainer, Button, ContainerLeftAux, Image, ParagraphContainerSecond, Par, FirstSection, GeneralContainer, Title, ContainerSections, ContainerLeft, ContainerRigth, ParagraphHalf} from './StemBodySelection.styles';
 import { firstSection } from './textContent';
-import "./styles.css";
-import stem1 from '../../../Images/stem1.jpg'
+import stem1 from '../../../../Images/stem1.jpg'
 import YouTube from 'react-youtube';
-import SquareItem from './SquareItem/SquareItem'
+import SquareItem from '../SquareItem/SquareItem'
 
 class StemBodyItem extends React.Component{
  render(){
- 
+  const opts = {
+    height: '390',
+    width: '800',
+    playerVars: { 
+      autoplay: 0
+    }
+  };
   return(
     <GeneralContainer>
       <FirstSection>
         <Title>{firstSection.title1}</Title>
         <ContainerSections>
           <ContainerLeft>
-            <div>
+            <ContainerLeftAux>
               <ParagraphHalf>{firstSection.parragraph1}</ParagraphHalf>
-              <div>
+              <ImageContainer>
                 <Image src={stem1}/>
-              </div>
+              </ImageContainer>          
               <ParagraphHalf>{firstSection.parragraph2}</ParagraphHalf>
-            </div>
-            <ParagraphHalf>{firstSection.parragraph3}</ParagraphHalf>
+            </ContainerLeftAux>
+            <ParagraphContainer><ParagraphHalf>{firstSection.parragraph3}</ParagraphHalf></ParagraphContainer>
           </ContainerLeft>
           <ContainerRigth>
             <ParagraphHalf>
               {firstSection.parragraph4}
-              <SquareItem/>
             </ParagraphHalf>
+            <SquareItem/>
           </ContainerRigth>
         </ContainerSections>  
       </FirstSection>
@@ -37,18 +42,14 @@ class StemBodyItem extends React.Component{
       <FirstSection>
         <Title>{firstSection.title1}</Title>
         <ContainerSections>
-          <ContainerLeftAux>
-            <div>
-             <YouTube videoId="AMaQvev2BNI" />
-            </div>
+          <ContainerLeftAux>  
+            <YouTube opts={opts} videoId="AMaQvev2BNI" />  
           </ContainerLeftAux>
           <ContainerRigth>
-            <div>
+            <ImageContainer>
               <Image src={stem1}/>
-            </div>
-            <ParagraphHalf>
-              {firstSection.parragraph5}
-            </ParagraphHalf>
+            </ImageContainer>
+            <ParagraphContainerSecond><ParagraphHalf>{firstSection.parragraph5}</ParagraphHalf></ParagraphContainerSecond>
           </ContainerRigth>
         </ContainerSections>  
       </FirstSection>
@@ -57,16 +58,16 @@ class StemBodyItem extends React.Component{
       <FirstSection>
         <Title>{firstSection.title1}</Title>
         <ContainerSections>
-          <ContainerLeftAux>
-            <Par>{firstSection.parragraph6}</Par>
-            <div>
+          <Ex>
+            <div><Par>{firstSection.parragraph6}</Par></div>
+            <LargeImageContainer>
               <Image src={stem1}/>
-            </div>
-          </ContainerLeftAux>
+            </LargeImageContainer>
+          </Ex>
           <ContainerRigth>
-            <ParagraphHalf>
-              <Par>{firstSection.parragraph7}</Par>
-            </ParagraphHalf>
+            <ParagraphContainerSecond>
+             <ParagraphHalf><Par>{firstSection.parragraph7}</Par></ParagraphHalf>
+            </ParagraphContainerSecond>
             <ButtonContainer>
               <Button>Consectetuer adipiscing</Button>
             </ButtonContainer>
