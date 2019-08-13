@@ -1,34 +1,45 @@
 import React from 'react';
-import {Icon, Image, Text, TextContainer, ImageContainer, IconContainer, 
-LeftContainer, generalContainer, BodyContainer, RigthContainer, ItemContainer} from './header.styles'
+import {ButtonIcon, Image, Text, TextContainer, ImageContainer, 
+IconContainer, LeftContainer, GeneralContainer, BodyContainer, 
+RigthContainer, UserIcon, Link, IconPlace} from './header.styles'
 import {text} from './headerText'
 import logo from '../../Images/logo.png'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {library} from '@fortawesome/fontawesome-svg-core';
-import { fab } from '@fortawesome/free-brands-svg-icons'
-
-library.add(fab)
 
 class HeaderItem extends React.Component{
  render(){
   return(
-   <generalContainer>
+   <GeneralContainer>
      <BodyContainer>
       <LeftContainer>
         <ImageContainer><Image src={logo}/></ImageContainer>
         <TextContainer>
-         <Text>{text.Stem}</Text>
-         <Text>{text.Oferta}</Text>
-         <Text>{text.Us}</Text>
+         <Link href={text.Home}><Text>{text.Stem}</Text></Link>
+         <Link href={text.Home}><Text>{text.Oferta}</Text></Link>
+         <Link href={text.Home}><Text>{text.Us}</Text> </Link>
         </TextContainer>
       </LeftContainer>
       <RigthContainer>
        <IconContainer>
-       
+          <Link href={text.InstagramPath}>
+            <ButtonIcon><IconPlace src="https://via.placeholder.com/30x30"/></ButtonIcon> 
+          </Link>
+          <Link href={text.InstagramPath}>
+            <ButtonIcon><IconPlace src="https://via.placeholder.com/30x30"/></ButtonIcon>
+          </Link>
+          <Link href={text.InstagramPath}>
+            <ButtonIcon><IconPlace src="https://via.placeholder.com/30x30"/></ButtonIcon>
+          </Link>
+          <Link href={text.InstagramPath}>
+            <ButtonIcon><IconPlace src="https://via.placeholder.com/30x30"/></ButtonIcon>
+          </Link>
+          <Link href={text.InstagramPath}>
+            <UserIcon><IconPlace src="https://via.placeholder.com/30x30"/></UserIcon>
+          </Link>
+          
        </IconContainer>
       </RigthContainer>
      </BodyContainer>
-   </generalContainer>
+   </GeneralContainer>
   );
  }
 }
