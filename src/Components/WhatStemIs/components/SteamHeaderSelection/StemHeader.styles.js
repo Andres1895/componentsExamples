@@ -24,6 +24,9 @@ font-size: 20px
 padding: 0.7rem
 padding-left: 5rem
 padding-right: 5rem
+&:hover {
+  filter: brightness(1.15);
+}
 `
 export const Paragraph = styled.p`
 color: white

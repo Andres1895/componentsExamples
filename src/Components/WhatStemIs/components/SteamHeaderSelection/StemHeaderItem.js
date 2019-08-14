@@ -1,5 +1,5 @@
 import React from 'react';
-import {ContainerGeneral, Title, Button, Paragraph, ButtonContainer} from './buttonComponent.styles'
+import {ContainerGeneral, Title, Button, Paragraph, ButtonContainer} from './StemHeader.styles'
 
 class ButtonComponent extends React.Component{
  render(){
