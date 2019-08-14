@@ -6,14 +6,14 @@ import Footer from './Components/footer';
 import ContactUs from './Components/contactUs';
 import WsiComponente from './Components/WhatStemIs/components/SteamHeaderSelection/StemHeader'
 import StemBody from './Components/WhatStemIs/components/StemBodySelection/StemBodySelection'
-import HeaderItem from './Components/header/headerItem'
+import Sponsor from './Components/Sponsors/sponsorItem'
 
 library.add(fab)
 
 function App() {
   return (
     <div>
-        <HeaderItem/>
+        <Sponsor/>
         <WsiComponente/>
         <StemBody/>
         <ContactUs/>
