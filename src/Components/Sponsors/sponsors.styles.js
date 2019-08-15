@@ -11,17 +11,18 @@ padding: 2rem
 `
 
 export const LeftContainer = styled.div`
-background-color: red
-width: 30%
+background-color: white
+width: 15%
+padding: 3rem
 `
 export const RightContainer = styled.div`
-background-color: blue
-width: 70%
+background-color: white
+border-color: blue
+width: 85%
 `
 export const TextContainer = styled.div`
 display: flex;
 flex-direction: row;
-padding-left: 3rem;
 align-items: flex-end;
 `
 
@@ -30,5 +31,5 @@ display: flex
 color: #02ADAD
 font-weight: bold
 margin: 0
-padding-left: 3em;
+font-size: larger
 `

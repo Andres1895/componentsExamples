@@ -1,6 +1,8 @@
 import React from 'react';
-import {GeneralContainer, BodyContainer, LeftContainer, RightContainer, Text, TextContainer} from './sponsors.styles'
+import {GeneralContainer, BodyContainer, LeftContainer, RightContainer,
+Text, TextContainer} from './sponsors.styles'
 import {textsponsor} from './textSponsor'
+import sponsors from './images.json'
 
 class Sponsor extends React.Component{
  render(){
