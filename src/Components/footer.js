@@ -9,32 +9,32 @@ library.add(fab)
 class Footer extends React.Component{
     render(){
         return(
-            <div class="containerFooter">
-                    <div class="nullColumn">
+            <div className="containerFooter">
+                    <div className="nullColumn">
 
                     </div>
-                    <div class="Privacy">
-                        <div class="privacyItems">
-                            <button class="buttonStyle"> Aviso de Privacidad</button>
+                    <div className="Privacy">
+                        <div className="privacyItems">
+                            <button className="buttonStyle"> Aviso de Privacidad</button>
                         </div>
-                        <div class="privacyItems">
-                        <button class="buttonStyle"> Mapa de Sitio</button>
+                        <div className="privacyItems">
+                        <button className="buttonStyle"> Mapa de Sitio</button>
                         </div>
-                        <div class="copyright">
-                        <button class="buttonStyle">Copyrigth</button>
+                        <div className="copyright">
+                        <button className="buttonStyle">Copyrigth</button>
                         </div>
                     </div>
-                    <div class="socialMedia">
-                            <button class= "buttonSocial"> 
+                    <div className="socialMedia">
+                            <button className= "buttonSocial"> 
                                 <FontAwesomeIcon icon={['fab', 'youtube']}/>
                             </button>
-                            <button class="buttonSocial">
+                            <button className="buttonSocial">
                                 <FontAwesomeIcon icon={['fab', 'instagram']}/>    
                             </button>
-                            <button class="buttonSocial">
+                            <button className="buttonSocial">
                                 <FontAwesomeIcon icon={['fab', 'facebook']}/>    
                             </button>
-                            <button class="buttonSocial">
+                            <button className="buttonSocial">
                                 <FontAwesomeIcon icon={['fab', 'twitter']}/>    
                             </button>
                     </div>
