@@ -1,6 +1,6 @@
 import React from 'react';
 import {GeneralContainer, BodyContainer, LeftContainer, RightContainer,
-Text, TextContainer} from './sponsors.styles'
+Text, TextContainer, ContainerSponsorImages} from './sponsors.styles'
 import {data_sponsor} from './images'
 import {textsponsor} from './textSponsor'
 
@@ -13,10 +13,11 @@ class Sponsor extends React.Component{
     };
   }
   componentDidMount(){
-      this.setState({sponsor: data_sponsor.logo})
+      this.setState({sponsor: data_sponsor})
   }
  render(){
-  console.log(this.state.sponsor)
+  const {sponsor} = this.state
+
   return(
    <GeneralContainer>
     <BodyContainer>
@@ -28,7 +29,11 @@ class Sponsor extends React.Component{
       </TextContainer>
      </LeftContainer>
      <RightContainer>
-      
+       {sponsor.map((spon)=>(
+        <a href={spon.url}>
+          <ContainerSponsorImages src={spon.logo} title={spon.name}/>
+        </a>
+       ))}
      </RightContainer>
     </BodyContainer>
    </GeneralContainer>
