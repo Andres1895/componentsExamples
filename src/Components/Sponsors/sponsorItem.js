@@ -6,7 +6,10 @@ import {textsponsor} from './textSponsor'
 
 
 function Sponsor(){
-  const [sponsor, setSponsor] = useState(data_sponsor)
+  const [sponsor, setSponsor] = useState([])
+  useEffect(()=>{
+    setSponsor(data_sponsor)
+  }, [])
 
   return(
    <GeneralContainer>
