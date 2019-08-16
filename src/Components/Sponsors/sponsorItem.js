@@ -1,8 +1,9 @@
 import React from 'react';
 import {GeneralContainer, BodyContainer, LeftContainer, RightContainer,
 Text, TextContainer} from './sponsors.styles'
+import {data_sponsor} from './images'
 import {textsponsor} from './textSponsor'
-import $ from 'jquery'
+
 
 class Sponsor extends React.Component{
   constructor(props){
@@ -12,11 +13,7 @@ class Sponsor extends React.Component{
     };
   }
   componentDidMount(){
-    var json = require('./images.json');
-    $.getJSON(json, function(data){
-      this.setState({sponsor: data})
-      console.log("Json ", json)
-    })
+      this.setState({sponsor: data_sponsor.logo})
   }
  render(){
   console.log(this.state.sponsor)
