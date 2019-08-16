@@ -1,22 +1,12 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {GeneralContainer, BodyContainer, LeftContainer, RightContainer,
 Text, TextContainer, ContainerSponsorImages} from './sponsors.styles'
 import {data_sponsor} from './images'
 import {textsponsor} from './textSponsor'
 
 
-class Sponsor extends React.Component{
-  constructor(props){
-    super(props);
-    this.state = {
-      sponsor: []
-    };
-  }
-  componentDidMount(){
-      this.setState({sponsor: data_sponsor})
-  }
- render(){
-  const {sponsor} = this.state
+function Sponsor(){
+  const [sponsor, setSponsor] = useState(data_sponsor)
 
   return(
    <GeneralContainer>
@@ -38,7 +28,6 @@ class Sponsor extends React.Component{
     </BodyContainer>
    </GeneralContainer>
   );
- }
 }
 
 export default Sponsor
