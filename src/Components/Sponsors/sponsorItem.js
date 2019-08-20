@@ -23,7 +23,7 @@ function Sponsor(){
      </LeftContainer>
      <RightContainer>
        {sponsor.map((spon)=>(
-        <a href={spon.url}>
+        <a href={spon.url} target='_blank'>
           <ContainerSponsorImages src={spon.logo} title={spon.name}/>
         </a>
        ))}
