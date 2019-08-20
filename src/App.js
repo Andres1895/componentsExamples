@@ -6,6 +6,7 @@ import Footer from './Components/footer';
 import WsiComponente from './Components/WhatStemIs/components/SteamHeaderSelection/StemHeader'
 import StemBody from './Components/WhatStemIs/components/StemBodySelection/StemBodySelection'
 import Sponsor from './Components/Sponsors/sponsorItem'
+import StemForm from './Components/StemForm/stem-form'
 
 library.add(fab)
 
@@ -13,6 +14,7 @@ function App() {
   return (
     <div>
       <Sponsor/>
+      <StemForm/>
       <WsiComponente/>
       <StemBody/>
       <Footer />

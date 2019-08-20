@@ -42,5 +42,4 @@ padding: 1rem
 &:hover {
  cursor: pointer;
  }
- 
 `
