@@ -55,6 +55,9 @@ border: none
 cursor: pointer
 color: #02ADAD
 font-weight: bold
+&:hover {
+ filter: brightness(1.15) 
+}
 `
 export const FormContainer = styled.div`
 display: flex
