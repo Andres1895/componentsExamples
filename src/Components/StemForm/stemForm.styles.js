@@ -1,10 +1,8 @@
 import styled from 'styled-components'
 
 export const GeneralContainer = styled.div`
-
 padding: 1rem
 `
-
 export const BodyContainer = styled.div`
 display: flex
 flex-direction: row
@@ -35,7 +33,6 @@ font-size: 1.5rem
 padding: 2rem
 margin: 0
 `
-
 export const TitleStem = styled(Title)`
 font-size: 2rem
 padding-top: 0
@@ -59,7 +56,6 @@ cursor: pointer
 color: #02ADAD
 font-weight: bold
 `
-
 export const FormContainer = styled.div`
 display: flex
 flex-direction: column
@@ -70,17 +66,45 @@ display: flex
 flex-direction: column
 padding: 2rem
 `
+export const FormButton = styled.button`
+background: transparent
+border-radius: 17px
+border: 2px solid #02ADAD
+font-weigth: bold
+min-width: 8rem
+color: #02ADAD
+padding: 0.7rem
+font-size: 15px
+&:hover {
+ filter: brightness(1.15) 
+}
+`
 export const Input = styled.input`
+display: flex
+flex: 0.5
 background: transparent
 border-radius: 20px
 border: 2px solid #02ADAD
 padding: 1rem
-width: 50%
-
+width:50%
 `
 export const TextArea = styled.textarea`
 background: transparent
 border-radius: 20px
 border: 2px solid #02ADAD
-
+padding: 1rem
+padding-bottom: 5rem
+resize: none
+`
+export const TitleLabel = styled.label`
+color: #02ADAD
+font-size: 2rem
+font-weight: bold
+padding-bottom: 2rem;
+`
+export const SubtitleLabel = styled(TitleLabel)`
+font-size: 1rem
+`
+export const InputContainer = styled.div`
+padding-bottom: 2rem;
 `

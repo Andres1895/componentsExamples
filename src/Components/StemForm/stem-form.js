@@ -1,12 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import {GeneralContainer, BodyContainer, RightContainer, LeftContainer,
 ImageContainer, Image, Title, TextContainer, SecondContainer,
 TitleStem, ButtonContainer, Button, FormContainer, Form, 
-Input, TextArea} from './stemForm.styles'
+Input, TextArea, SubtitleLabel, TitleLabel, InputContainer, FormButton } from './stemForm.styles'
 import {textForm} from './formText'
+import {emailValidation, nameValidation, commentValidation} from '../../../src/Utils/validators'
 
-class StemForm extends React.Component{
- render(){
+function StemForm () {
+  const [ name, setName] = useState('')
+  const [ email, setEmail] = useState('')
+  const [ comment , setComment] = useState('')
+  console.log('Name',name);
+  console.log('Email', email);
+  console.log('Comments',comment);
   return(
    <GeneralContainer>
     <BodyContainer>
@@ -31,31 +37,46 @@ class StemForm extends React.Component{
       </ButtonContainer>
       <FormContainer>
        <Form>
-        <label>{textForm.titleForm}</label>
-        <label>{textForm.subtitleForm}</label>
-        <Input type="user" 
-         name="user" 
+        <TitleLabel>{textForm.titleForm}</TitleLabel>
+        <SubtitleLabel>{textForm.subtitleForm}</SubtitleLabel>
+        <InputContainer>
+        <Input type="name" 
+         name="name" 
+         value={name}
+         required
+         pattern={nameValidation}
+         onChange={e => setName(e.target.value)}
          placeholder={textForm.placeholderName}
          />
-         <Input type="email" 
-          name="emal" 
+        </InputContainer>
+        <InputContainer>
+        <Input type="email" 
+          name="email" 
+          required
+          pattern={emailValidation}
+          value={email}
+          onChange={e => setEmail(e.target.value)}
           placeholder={textForm.placeholderCorreo}
          />
-         <TextArea type="comment" 
-          name="comment" 
+        </InputContainer>
+        <TextArea type="comment" 
+          name="comment"
+          required
+          pattern={commentValidation}
+          value={comment}
+          onChange={e => setComment(e.target.value)}
           placeholder={textForm.placeholderComentario}
          />
+        <ButtonContainer>
+          <FormButton>
+            {textForm.buttonForm} 
+          </FormButton>
+        </ButtonContainer>
        </Form>
-       <ButtonContainer>
-       <Button>
-        {textForm.buttonForm} 
-       </Button>
-      </ButtonContainer>
       </FormContainer>
      </RightContainer>
     </BodyContainer>
    </GeneralContainer>
   );
- }
 }
 export default StemForm
