@@ -10,9 +10,6 @@ function StemForm () {
   const [ name, setName] = useState('')
   const [ email, setEmail] = useState('')
   const [ comment , setComment] = useState('')
-  console.log('Name',name);
-  console.log('Email', email);
-  console.log('Comments',comment);
   return(
    <GeneralContainer>
     <BodyContainer>
