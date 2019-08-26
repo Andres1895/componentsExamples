@@ -10,7 +10,8 @@ export const JumbotronGeneral = styled.div`
 export const Title= styled.h1`
     font-size: ${props => props.smallTitle ? "20px" : "40px"};
     margin:0;
-    padding: 2rem;
+		padding: 2rem;
+		color: ${props => props.card ? 'rgb(0, 148, 152)': 'white'}
 `;
 
 export const LinkContainer = styled.div`
@@ -20,21 +21,21 @@ export const LinkContainer = styled.div`
 `
 
 export const Link = styled.a`
-    color: white;
+color: ${props => props.card ? 'rgb(0, 148, 152)': 'white'}
 `;
 
 export const Paragraph = styled.p`
-    color: white;
+		color: ${props => props.card ? "black" : "white"};
     text-align: justify;
     margin: 0;
     padding: 2rem;
 `;
 
 export const JumboItem = styled.div`
-    background-color: rgba(0, 148, 152, 0.7);
-    flex-direction: row;
-    margin-right: ${props => props.margin ? "2rem" : "0"};
-    height: 100%
+	background-color: ${props => props.card ? "white" : "rgba(0, 148, 152, 0.7)"};
+	flex-direction: row;
+	margin-right: ${props => props.margin ? "2rem" : "rgba(0, 148, 152, 0.7)"};
+	height: 100%
 `;
 
 export const Width80 = styled.div`

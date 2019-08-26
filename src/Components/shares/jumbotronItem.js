@@ -1,19 +1,19 @@
 import React from 'react';
 
-import {JumboItem, Paragraph, Link, Title, LinkContainer} from './jumbotron.styles';
+import {JumboItem, Paragraph, Link, Title, LinkContainer, Card} from './jumbotron.styles';
 class JumbotronItem extends React.Component{
     render(){
-        const { smallTitle, margin } = this.props;
+        const {  card, smallTitle, margin } = this.props;
         return(
-            <JumboItem margin={margin}>
-                <Title smallTitle={smallTitle}>
+            <JumboItem  card={card} margin={margin}>
+                <Title card={card} smallTitle={smallTitle}>
                     {this.props.title}
                 </Title>
-                <Paragraph>
+                <Paragraph card={card}>
                     {this.props.textArea}
                 </Paragraph>
                 <LinkContainer>
-                    <Link href={this.props.link}>
+                    <Link card={card} href={this.props.link}>
                         {this.props.linkText}
                     </Link>
                 </LinkContainer>

@@ -1,6 +1,6 @@
 import React from 'react';
-import JumbotronItem from './jumbotronItem'
-import {SecondJumbotronContainer, JumbotronGeneral, Width80, Width20, JumbotronContainer} from './jumbotron.styles';
+import JumbotronItem from '../shares/jumbotronItem'
+import {SecondJumbotronContainer, JumbotronGeneral, Width80, Width20, JumbotronContainer} from '../shares/jumbotron.styles';
 
 class Jumbotron extends React.Component{
     render(){
